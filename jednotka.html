@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel-N">
+    <link rel="stylesheet" type="text/css" href="stylyjednotka.css">
+    <title>Jednotka dobrovolných hasičů</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="nadpis">Jednotka dobrovolných hasičů Horoměřice</h1>
+            <img src="obrázky/znakořez2.jpg" alt="Logo jednotky" class="logo-pravy">
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="homepage-button">Homepage</a>
+        <a href="sbor.html" class="sbor-button">SDH</a>
+        <a href="mládež.html" class="mládež-button">Mládež</a>
+        <a href="#modal" class="dulezite-button">Oznámení</a>
+    </nav>
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal">
+            <a href="#" class="close-button">&times;</a>
+            <h2>Oznámení</h2>
+            <p>Toto je důležité oznámení pro členy sboru.</p>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <p>Jednotka sboru dobrovolných hasičů (JSDH) obce nebo závodu je jednotka požární ochrany (JPO), která se zřizuje na základě § 29 a § 68 zákona 133/1985 Sb., o požární ochraně, ve znění pozdějších předpisů.</p>
+            <p>Každý hasič v této jednotce je proškolen nejméně 40 hodinami teoretických i praktických znalostí ročně a dále je musí doplňovat. Musí mít potvrzení od lékaře, že je zdravotně způsobilý, a každé 2 roky toto potvrzení obnovovat.</p>
+        </section>
+
+        <section class="fotogalerie-container">
+            <img src="obrázky/Avia.jpg" alt="Technika Avia">
+            <img src="obrázky/Denis1.jpg" alt="Technika Denis">
+            <img src="obrázky/DA.jpg" alt="Technika DA">
+            <img src="obrázky/Tatra184.jpg" alt="Technika Tatra 148">
+            <img src="obrázky/Liaz1.jpg" alt="Technika Liaz">
+            <img src="obrázky/Tatra8151.jpg" alt="Technika Tatra 815">
+        </section>
+
+        <section class="hodnosti">
+            <div>
+                <img src="obrázky/veliteljednotky.jpg" alt="Velitel jednotky">
+                <p>Velitel: Petr Klain</p>
+            </div>
+            <div>
+                <img src="obrázky/zastupcevelitele.jpg" alt="Zástupce velitele">
+                <p>Zástupce velitele: Jiří Smutný</p>
+            </div>
+            <div>
+                <img src="obrázky/strojník.jpg" alt="Vedoucí dílny">
+                <p>Vedoucí dílny: Martin Kubaš</p>
+            </div>
+        </section>
+
+        <section class="formular">
+            <h3>Nábor do JSDH Horoměřice</h3>
+            <form action="mailto:hasici@horomerice.cz" method="post" enctype="text/plain">
+                <label for="jmeno">Jméno:</label>
+                <input type="text" id="jmeno" name="jmeno" required>
+
+                <label for="prijmeni">Příjmení:</label>
+                <input type="text" id="prijmeni" name="prijmeni" required>
+
+                <label for="vek">Věk:</label>
+                <input type="number" id="vek" name="vek" min="18" required>
+
+                <fieldset>
+                    <legend>Řidičské oprávnění:</legend>
+                    <label><input type="checkbox" name="ridicska" value="B"> B</label>
+                    <label><input type="checkbox" name="ridicska" value="C"> C</label>
+                    <label><input type="checkbox" name="ridicska" value="D"> D</label>
+                    <label><input type="checkbox" name="ridicska" value="E"> E</label>
+                </fieldset>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon">
+
+                <label for="zprava">Zpráva:</label>
+                <textarea id="zprava" name="zprava" rows="3"></textarea>
+
+                <button type="submit">Odeslat</button>
+            </form>
+        </section>
+
+        <section class="odkazfacebook">
+            <a href="https://www.facebook.com/JSDHHoromerice" target="_blank" class="btn-3d">JSDH na Facebooku</a>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2024 Hasiči Horoměřice. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
