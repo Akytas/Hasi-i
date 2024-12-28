@@ -1,0 +1,158 @@
+/* Reset stylů */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%; /* Celá výška stránky */
+}
+
+/* Tlačítko homepage JSD Mládež */
+.homepage-button, .jednotka-button, .mládež-button {
+    display: inline-block; /* Aby vypadalo jako tlačítko */
+    padding: 10px 20px; /* Vnitřní mezery */
+    background-color: red; /* Modré pozadí */
+    color: black; /* Bílé písmo */
+    text-decoration: none; /* Odstranění podtržení */
+    border-radius: 5px; /* Zaoblené rohy */
+    font-size: 16px; /* Velikost textu */
+    border: 1px solid #0056b3; /* Jemný rámeček */
+    cursor: pointer; /* Ukazatel ruky při najetí */
+    transition: background-color 0.3s ease; /* Animace na změnu pozadí */
+}
+
+.homepage-button:hover, .jednotka-button:hover, .mládež-button:hover {
+    background-color: yellow; /* Tmavší modrá při najetí */
+    transform: translateY(-2px); /* Mírné zvednutí tlačítka */
+}
+
+/* Nastavení pro kontejner v hlavičce, aby položky byly vedle sebe */
+.header-container {
+    display: flex; /* Použití flexboxu pro umístění položek vedle sebe */
+    justify-content: space-between; /* Umožní mezi nimi prostor */
+    align-items: center; /* Vertikální centrování */
+    width: 100%; /* Šířka celé šířky stránky */
+}
+
+/* Tlačítko */
+.dulezite-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: black;
+    text-decoration: none;   
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid black; /* Černý rámeček */
+    transition: background-color 0.3s ease;
+}
+
+.dulezite-button:hover {
+    background-color: darkorange;
+    transform: translateY(-2px);
+}
+
+/* Modal */
+.modal-overlay {
+    display: none; /* Skryté ve výchozím stavu */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+.modal .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Checkbox Hack */
+#modal:target {
+    display: flex; /* Zobrazí modal */
+}
+
+/* Nadpis */
+.nadpis {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: red;
+    -webkit-text-stroke: 1px black;
+    margin: 37px 322px;
+}
+
+/* Logo */
+.logo-pravy {
+    width: 100px; /* Nastavení šířky loga */
+    height: auto; /* Automatická výška podle šířky */
+    margin: 67px 20px;
+}
+
+.obsah {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    margin: 20px 100px;
+    font-size: clamp(12px, 2vw, 18px); /* Dynamická velikost textu */
+}     
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    text-align: center;
+    color: red;
+}
+ 
+/* Obrázek */
+.obrázek {
+    margin: 2px auto; /* Vnější mezery: nahoře a dole */
+    padding: 15px; /* Vnitřní mezera uvnitř bloku */
+    width: 30%; /* Šířka bloku */
+    text-align: center; /* Zarovnání textu */
+}
+
+/* Funkcionáři */
+.funkcionáři {
+    text-align: center;
+    font-size: 1.3rem;
+    color: black; 
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 20px;
+}
+
+/* Kontaktní údaje */
+.adresa {
+    text-align: center;
+    font-size: 1.3rem;
+    color: black; 
+    margin-bottom: 20px;
+    font-size: clamp(12px, 2vw, 18px); /* Dynamická velikost textu */
+}
+
+/* Styly pro patičku */
+footer {
+    height: 50px; /* Výška patičky */
+    background-color: #ddd; /* Světle šedé pozadí */
+    text-align: center; /* Zarovnání textu na střed */
+    line-height: 50px; /* Vertikální zarovnání textu */
+}
