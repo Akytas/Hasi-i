@@ -25,16 +25,20 @@ body {
     background-repeat: no-repeat;
 }
 
-/* Logo  */
-.logo-pravy {
+/* Logo */
+.logo-pravy, .logo-levy {
     position: absolute;
     top: 20%;
-    width: 175px; /* Nastavení šířky loga */
+    width: 165px; /* Stejná šířka pro obě loga */
+    height: auto; /* Zachová poměr stran */
     transform: translateY(-50%);
+}
+.logo-levy {
+    left: 40px;
 }
 
 .logo-pravy {
-    right: 40px; /* Umístění vpravo */
+    right: 40px;
 }
 
 /* Obsah na středu */
